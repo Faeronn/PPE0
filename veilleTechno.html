@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio PPE0</title>
+
+		<link rel="icon" href="ressources/img/favicon.ico">
+		<link rel="stylesheet" href="ressources/css/style.css">
+		<script src="ressources/js/modules.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="containerTop">
+				<div class="promo">
+					<a href="index.html">Alexis Lelardoux<br>Portfolio</a>
+				</div>
+				
+				<label for="menuBox" class="responsiveMenu">Menu</label>
+  				<input type="checkbox" role="button" id="menuBox">
+				<ul class="navigation">
+					<li><a class="navbox" href="index.html">Accueil</a></li>
+					<li><a class="navbox" href="cv.html">Curriculum Vitæ</a></li>
+					<li><a class="navbox" href="skills.html">Compétences</a></li>
+					<li class="dropdown"><a class="navbox" href="#">Projets &#x25bc;</a>
+						<div class="submenu">
+							<a href="projetPpe.html">Projets PPE</a>
+							<a href="projetPerso.html">Projets Personnels</a>
+							<a href="stages.html">Stages</a>
+						</div>
+					</li>
+					<li><a class="navbox" href="veilleTechno.html">Veille</a></li>
+					<li><a class="navbox" href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+
+
+		<div class="container">
+			<ul class=menuBar>
+				<li> <a class="noDeco" href="index.html">Accueil</a></li>
+				<li> / Veille Technologique</li>
+			</ul>
+
+			
+			<div class="kezako">
+				<img class="kezakoImg" src="ressources/img/info.png" alt="infos" width="200" height="200">
+				<div class="kezakoContent">
+					<h1>La Veille Technologique : de quoi s'agit-il ?</h1>
+					<p>La <b>veille technologique</b> est une pratique qui consiste à surveiller en permanence un produit, une technologie, un procédé, dans le but de <b>suivre son évolution</b> en collectant des données publiques -à l'inverse de l'espionnage industriel- et de les analyser afin de rester à la pointe de la technologie, anticiper la concurrence, identifier les meilleures pratiques et les appliquer.</p>
+					<p>La Veille Technologique est ainsi <b>essentielle</b> pour une entreprise.</p>
+				</div>
+			</div>
+					
+			<div class="veilleContent" style="height : 850px">
+				<h1 class="center">Le sujet de veille abordé ici sera : <u>la technologie des écrans</u></h1>
+				<p style="font-size: 14px"><b>Note</b> : Vous pouvez passer le curseur sur une image pour réveler la description associée.</p><br>
+				<img src="ressources/img/frise2.png" alt="friseEcran" usemap="#image-map">
+
+				<map name="image-map">
+				    <area coords="302,257,35,0" shape="rect" onmouseover="showInfos(1)">
+				    <area coords="306,226,538,449" shape="rect" onmouseover="showInfos(2)">
+				    <area coords="546,0,806,226" shape="rect" onmouseover="showInfos(3)">
+				    <area coords="815,228,1054,449" shape="rect" onmouseover="showInfos(4)">
+				</map>
+
+				<br><br><br><p id="veilleContent"></p>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

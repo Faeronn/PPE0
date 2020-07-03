@@ -1,0 +1,888 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat.woff2') format('woff2'),
+		url('../fonts/montserrat.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-bold.woff2') format('woff2'),
+		url('../fonts/montserrat-bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+p {
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+
+.container {
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 0;
+}
+
+
+.containerTop {
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 0;
+}
+
+
+.noDeco {
+	color: #428bca;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+
+
+
+/* header / navigation - Début */
+
+header {
+	height: 100px;
+	background-color: #424558;
+	padding-top: 10px;
+}
+
+header li{
+	list-style: none;
+	display: inline-block;
+}
+
+
+.promo {
+	display: inline-block;
+	/*vertical-align: top; */
+	padding-top: 10px;
+}
+
+.promo a {
+	text-decoration: none;
+	color: #FFFFFF;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.navigation {
+	display: inline-block;
+	margin: 0 0 0 194px;
+}
+
+.navigation .navbox {
+	text-decoration: none;
+	display: inline-block;
+	padding: 20px;
+	color: #FFFFFF;  /* #289dcc */
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.navigation .navbox:hover {
+	background-color: rgba(228, 77, 38, 0.15);
+	border-top: 5px solid #e44d26;
+	padding-top: 15px
+
+}
+
+
+header input[type=checkbox], .responsiveMenu {
+	display: none;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+header input[type=checkbox]:checked ~ .navigation {
+	display: block;
+}
+
+
+.submenu {
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	background-color: rgba(66, 69, 88, 1.0);
+	margin: 5px 0px 0px 20px;
+	position: absolute;
+	min-width: 160px;
+    display: none;
+    z-index: 1;
+    top: 7%;
+}
+
+.submenu a {
+	text-decoration: none;
+	padding: 12px 16px;
+	text-align: left;
+    color: #FFFFFF;
+    display: block;
+
+    font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.submenu a:hover{
+    background-color: rgba(228, 77, 38, 0.45);
+    border-top: 0;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* header / navigation - Fin */
+
+
+
+
+
+
+/* Début - Menu */
+
+.menuBar{
+	list-style: none;
+	padding: 10px 0 25px 30px ;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.menuBar li {
+	display: inline-block;
+	font-family: "Montserrat";
+	font-weight: normal;
+
+}
+
+/* Fin - Menu */
+
+
+
+
+
+/* Download CV -  Debut */ 
+
+.mainDownload  {
+	margin: 0 0 5px 0;
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.btPdf, .btDown {
+	width: 200px; 
+	height: 40px;
+	border: 1px solid gray;
+	color: #424558;  /* #289dcc */
+	text-decoration: none;
+	line-height: 40px;
+	display: inline-block;
+	margin: 5px;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.btPdf > img, .btDown > img {
+	margin : 12px 8px 12px 12px;
+	vertical-align: top;
+}
+
+.btPdf:hover, .btDown:hover {
+	background-color: #424558;
+	color: #FFFFFF;
+}
+
+
+
+
+/* Download CV - FIN */
+
+
+
+
+/* CV.html Début - Row */
+.cvContainer {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 20px;
+
+	/*border-radius: 25px;*/
+}
+
+
+.contentRight p {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.contentRight h2 {
+	margin-bottom: 0;
+}
+
+.contentLeft {
+	background-color: #333333;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 0 15px;
+	height: 1214px;
+	color: #FFFFFF;
+	width: 25%;
+
+	font-size: 16px;
+
+	/*
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;*/
+}
+
+.contentLeft h1 {
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.contentLeft h2 {
+	font-family: "Montserrat";
+	font-weight: bold;
+	padding-top: 50px;
+	font-size: 35px;
+}
+
+.hr {
+	height: 2px;
+	background-color: #FFFFFF;
+}
+
+.mid {
+	width: 50%;
+}
+
+.contentLeft > img {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/* CV.html Fin - Row */
+
+
+
+
+
+/* CV.html Début - Main */
+
+.contentRight {
+	background-color:#A7A9AC;
+	padding: 0 15px 0 30px;
+	display: inline-block;
+	vertical-align: top;
+	color:#000000;
+	width: 75%;
+
+
+	font-size: 16px;
+
+	/*border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;*/
+}
+
+.contentRight h1 {
+	font-family: "Montserrat";
+	font-weight: normal;
+	padding-top: 30px;
+	font-size: 20px;
+}
+
+.contentRight h2 {
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* CV.html Fin - Main */
+
+
+
+
+
+/* Contact.html Debut - Formulaire */
+
+.formu {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	margin-bottom: 20px;
+	padding: 20px;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.formu > h1 {
+	margin-top: 0;
+}
+
+.formu  b {
+	color: red;
+}
+
+input[type=text], input[type=email], select, textarea {
+	box-shadow: 0 1px 1px rgba(0 ,0 ,0 ,0.075) inset; /* horizontal vertical flou couleur*/
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    margin: 6px 0 16px 0;
+    resize: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+	border: 1px solid rgba(81, 203, 238, 1);
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+input[type=submit] {
+    border: 1px solid gray;
+	color: #424558;  /* #289dcc */
+	background-color: #EEEEEE;
+    font-size: 16px;
+
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+
+input:focus:invalid, textarea:focus:invalid {
+	border-left-width: 3px;
+	border-left-color: salmon;
+}
+
+input[type=submit]:hover {
+    background-color: #424558;
+	color: #FFFFFF;
+}
+
+.country {
+	margin-bottom: 40px;
+}
+
+/* Contact.html Fin - Formulaire */
+
+
+
+
+
+
+/* skills.html - Debut Compétences */
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-spacing: 0;
+
+    font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+table td, table th {
+    border: 1px solid #999999;
+    color: #333333;
+    padding: 8px;
+}
+
+table td {
+	background-color: #E8E8E8;
+}
+
+table th {
+	background-color: #CCCCCC;
+}
+
+table ul {
+	list-style: none;
+	padding: 0;
+}
+
+.englishContent {
+	display: none;
+}
+
+
+.englishDisplay {
+	margin: 5px 40px 20px 5px;
+	border: 1px solid grey;
+	display: inline-block;
+	padding: 10px;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+
+}
+
+.englishDisplay:hover {
+	background-color: #424558;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.check {
+	display: none;
+}
+
+.check:checked ~ .frenchContent {
+	display: none;
+}
+
+.check:checked ~ .englishContent {
+	display: block;
+}
+
+/* skills.html- FIN Compétences */
+
+
+
+
+
+
+
+
+/* projets - Ppe / Perso - Début */
+
+.note {
+	margin: 0 0 40px 0;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 20px;
+}
+
+
+.projetContainer {
+	width: 100%;
+	height: 1000px;
+}
+
+.projet {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	width: 1130px;
+	height: 400px;
+	margin: 20px 0 40px 0;
+
+	/*transition: all 0.25s;*/
+}
+
+.projetStage {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	width: 1130px;
+	height: 700px;
+	margin: 20px 0 40px 0;
+
+	/*transition: all 0.25s;*/
+}
+
+.projetImgStage {
+	display: inline-block;
+	transition: all 0.50s;
+	vertical-align: top;
+	object-fit: cover;
+	/*border: 1px solid grey;*/
+	height: 290px;
+	width: 340px;
+	margin: 30px;
+}
+
+/*.projet:hover {
+	transform: scale(1.03);
+
+}*/
+
+.projetImg {
+	display: inline-block;
+	transition: all 0.50s;
+	vertical-align: top;
+	object-fit: cover;
+	/*border: 1px solid grey;*/
+	height: 340px;
+	width: 340px;
+	margin: 30px;
+}
+
+.projetImg:hover {
+	transform: scale(1.5);
+	height: auto;
+	max-width: 100%;
+}
+
+.projetContent {
+	display: inline-block;
+	padding-left: 10px;
+	height: 360px;
+	width: 660px;
+	margin: 20px;
+}
+
+.projetContent > p {
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+.projetContent > h1 {
+	font-family: "Montserrat";
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.linkGit, .scDown {
+	background-color: #EEEEEE;
+	border: 1px solid gray;
+	text-decoration: none;
+	display: inline-block;
+	padding-right: 10px;
+	line-height: 40px;
+	color: #424558;  /* #289dcc */
+	margin: 5px;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.linkGit > img, .scDown > img {
+	margin : 12px 8px 12px 12px;
+	vertical-align: top;
+}
+
+.linkGit:hover, .scDown:hover {
+	background-color: #424558;
+	color: #FFFFFF;
+}
+
+/* projets - Ppe / Perso - Début */
+
+
+
+
+
+
+
+
+/* Veille.html - Début */
+.kezako {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	padding: 20px;
+	width: 100%;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+}
+
+.kezakoContent {
+	margin: 0 20px 20px 20px;
+	display: inline-block;
+	width: 868px;
+
+	padding-left: 50px;
+	font-size: 16px;
+}
+
+.kezakoImg {
+	margin : 15px 8px 12px 12px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.veilleContent {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	margin: 30px 0 20px 0;
+	padding: 20px;
+	height: 700px;
+	width: 100%;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.veilleContent > h1 {
+	margin-top: 0;
+}
+
+.veilleContent > img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+
+/* Veille.html - Fin */
+
+
+
+
+
+/* Accueil.html - Début */
+
+.homeContent {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	margin: 30px 0 40px 0;
+	padding: 20px;
+	width: 100%;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+}
+
+
+.homeContent > h1 {
+	margin-top: 0;
+}
+
+
+.linksContainer {
+	margin-top: 20px;
+}
+
+
+.link {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #EEEEEE;
+	text-decoration: none;
+	display: inline-block;
+	margin: 20px 0 20px 0;
+	color: #000000;
+	width: 100%;
+
+	font-family: "Montserrat";
+	font-weight: normal;
+	font-size: 16px;
+
+	/*border-radius: 25px;*/
+	
+}
+
+.link > h1 {
+	display: inline-block;
+	padding: 25px 0px 0px 20px;
+}
+
+.link:hover {
+	transform: scale(1.03);
+}
+
+.linkImg {
+	margin : 15px 8px 12px 12px;
+	vertical-align: top;
+	float: right;
+}
+
+.linkIcon {
+	margin : 30px 8px 12px 12px;
+	vertical-align: top;
+}
+
+/* Accueil.html - Fin*/
+
+
+
+
+
+
+
+
+/***************** RESPONSIVE *******************/
+
+/*Taille adaptée pour les ordis avec grand écran*/
+@media screen and (min-width: 1388px) {
+	header input[type=checkbox]:checked ~ .navigation {
+		/* Au cas où quelqu'un active le menu puis redimensionne la page*/
+		display: inline-block;
+	}
+}
+
+
+/*Taille adaptée pour les tablettes / petits ordis portables*/
+@media(min-width: 768px) and (max-width: 1169px) {
+	header input[type=checkbox]:checked ~ .navigation {
+		/* Au cas où quelqu'un active le menu puis redimensionne la page*/
+		display: inline-block;
+	}
+}
+
+
+/*Taille adaptée pour les smartphones*/
+@media screen and (max-width: 767px) {
+
+	.containerTop {
+		width: 100%;
+	}
+
+	.promo {
+		padding-bottom: 10px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.navigation {
+		display: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.navigation li {
+		background-color: #424558;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+	}
+
+	.navigation .navbox {
+		width: 100%;
+	}
+
+	.navigation .navbox:hover {
+		background-color: rgba(228, 77, 38, 1);
+	}
+
+
+	.responsiveMenu {
+		background-color: rgba(29, 197, 151, 1);
+		text-align: center;
+		margin-bottom: 5px;
+		padding: 12px 0;
+		display: block;
+		color: #FFFFFF;
+		width: 100%;
+	}
+
+	.submenu {
+		background-color: rgba(66, 69, 88, 1.0);
+		margin: 40px 0px 0px 30px;
+
+	}
+
+	.submenu a:hover{
+		background-color: rgba(228, 77, 38, 1);
+	}
+
+
+
+	.container {
+		margin-top: 50px;
+		width: 100%;
+	}
+
+
+
+	.menuBar {
+		display: none;
+	}
+
+	.btPdf, .btDown, .linkGit, .scDown {
+		margin: 0 0 5px 0;
+		text-align: center;
+		color: #333333;
+		width: 100%;	
+	}
+
+	.englishDisplay {
+    	margin-right: auto;
+    	margin-left: auto;
+    	max-width: 100%;
+
+	}
+
+	.projet {
+		margin: 0 0 80px 0;
+		width: 100%;
+		height: unset;
+	}
+
+	.projet:hover {
+		transform: none;
+	}
+
+	.projetContent, .kezakoContent {
+		width: 100%;
+		padding: 0 5px 0 5px;
+		margin: 0; 
+	}
+
+	.projetImg, .kezakoImg {
+		margin-left: auto;
+    	margin-right: auto;
+    	padding: 0 5px 0 5px;
+    	display: block;
+
+    	max-width: 100%;
+    	height: auto;
+	}
+
+	.projetImg:hover {
+		transform: none;
+	}
+
+
+
+	.veilleContainer {
+		padding: 0 5px 0px 5px;
+	}
+
+
+
+	.formu, .box {
+		width: 100%;
+	}
+
+
+
+	.contentRight, .contentLeft {
+		width: 100%;
+	}
+
+	.contentLeft {
+		height: unset;
+	}
+}
+
+/***************** RESPONSIVE *******************/
